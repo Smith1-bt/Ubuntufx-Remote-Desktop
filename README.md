@@ -88,17 +88,19 @@ docker run -d -p 22:22 -p 5901:5901 -p 6080:6080 --name myubuntu ubuntufx
 ---
 ## 📸 Screenshots
 
-| ![Startup Script](https://github.com/efxtv/ubuntufx-noVNC/raw/main/sample-images/ubuntufx-start.png) | ![XFCE Desktop](https://github.com/efxtv/ubuntufx-noVNC/raw/main/sample-images/ubuntufx-xfcd-de.png) |
+## 📸 Screenshots
+| ![Startup Script](https://github.com/efxtv/Ubuntufx-Remote-Desktop/raw/main/sample-images/ubuntufx-start.png) | ![XFCE Desktop](https://github.com/efxtv/Ubuntufx-Remote-Desktop/raw/main/sample-images/ubuntufx-xfcd-de.png) |
 |---|---|
 | **Startup Script Running** | **XFCE Desktop Environment** |
 
-| ![UbuntuFX Main](https://github.com/efxtv/ubuntufx-noVNC/raw/main/sample-images/ubuntufxmain.png) | ![SSH Access](https://github.com/efxtv/ubuntufx-noVNC/raw/main/sample-images/ubuntufxssh.png) |
+| ![UbuntuFX Main](https://github.com/efxtv/Ubuntufx-Remote-Desktop/raw/main/sample-images/ubuntufxmain.png) | ![SSH Access](https://github.com/efxtv/Ubuntufx-Remote-Desktop/raw/main/sample-images/ubuntufxssh.png) |
 |---|---|
-| **Main Browser View** | **SSH Access** |
+| **Main Desktop View** | **SSH Access** |
 
-| ![XFCE Terminal](https://github.com/efxtv/ubuntufx-noVNC/raw/main/sample-images/ubuntufx-xfce-terminal.png) |   |
+| ![XFCE Terminal](https://github.com/efxtv/Ubuntufx-Remote-Desktop/raw/main/sample-images/ubuntufx-xfce-terminal.png) |   |
 |---|---|
 | **XFCE Terminal** |   |
+
 
 ---
 BUYME A COFFEE: https://buymeacoffee.com/efxtv
