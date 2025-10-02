@@ -1,8 +1,9 @@
 # UbuntuFX Docker Image
 
 #### Contact [EFXTv](https://t.me/efxtv) if you need support or want to donate this repository
+---
 
-This project provides a **Dockerized Ubuntu 20.04 desktop environment** with:
+ Ubuntu Desktop XFCE + Firefox in Docker (VNC & noVNC, SSH Ready)
 
 - XFCE4 desktop environment
 - Firefox browser
